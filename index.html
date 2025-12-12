@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Musical Theater Catalog</title>
+    <link rel= "shortcut icon" type="image/png" href="images/actor mask.png"
+  </head>
+  <body>
+    <!-- children of the body element -->
+    <div class="bigcolumn dark-grey">
+      <div class="row green">
+        <div class="box white center content">
+          <img
+            src="images/littleshop.png"
+            id="little"
+            onclick="littleShop() "
+          />
+        </div>
+        <div class="box white">
+          <img src="images/wicked.png" onclick="wicked()"/>
+        </div>
+        <div class="box white center content">
+          <img
+            src="images/hamilton.png"
+            onclick="hamilton()"
+          />
+        </div>
+      </div>
+      <div class="row red">
+        <div class="box white center-content">
+          <img
+            src="images/heathers.png"
+            onclick="heathers()"
+          />
+        </div>
+        <div class="box white center-content">
+          <img src="images/grease.png" onclick="grease()"/>
+        </div>
+        <div class="box white center-content">
+          <img
+            src="images/spellingbee.png"
+            onclick="spellingBee()"
+          />
+        </div>
+      </div>
+      <div class="row blue">
+        <div class="box white center-content">
+          <img
+            src="images/itw.png"
+            onclick="intoTheWoods()"/>
+        </div>
+        <div class="box white center-content">
+          <img src="images/cabaret.png" onclick="cabaret()"/>
+        </div>
+        <div class="box white center-content">
+          <img
+            src="images/choruss line.png"
+            onclick="chorusLine()"
+            onclick="click()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="column dark-grey">
+      <div class="smallcolumn dark-grey">
+        <h1 id="storyHolder">
+          Welcome, and Thank You, for checking out Musical Catalog! Here are some
+          fun musicals if you are just getting into theatre. Click on the cover
+          image and read description of each.
+        </h1>
+        <h1 id="storyHolder"></h1>
+      </div>
+      <div class="tinycolumn dark-grey center-content" onclick="resetAll()">
+        <h1 id="storyHolder">
+          Click to reset!
+        </h1>
+        <h1 id="storyHolder"></h1>
+      </div>
+    </div>
+  </div>
+    <!-- this is an audio file you can play using JavaScript -->
+    <audio src="sounds/Skid_Row.mp3" id="my-shop"></audio>
+    <audio src="sounds/popular.mp3" id="popular"></audio>
+    <audio src="sounds/alexander.mp3" id="alex"></audio>
+    <audio src="sounds/candy_store.mp3" id="candy"></audio>
+    <audio src="sounds/grease.mp3" id="together"></audio>
+    <audio src="sounds/pandemonium.mp3" id="spelling"></audio>
+    <audio src="sounds/itw.mp3" id="into-woods"></audio>
+    <audio src="sounds/maybe_time.mp3" id="maybe"></audio>
+    <audio src="sounds/chorus_line.mp3" id="chorus"></audio>
+    <audio src="sounds/button.mp3" id="click"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
