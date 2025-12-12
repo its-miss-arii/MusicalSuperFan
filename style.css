@@ -1,0 +1,126 @@
+/* the 100vh and 100vw set the size of the body to fill the viewport (screen) */
+/* the 100vh and 100vw set the size of the body to fill the viewport (screen) */
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  margin: 0;
+  overflow: hidden;
+}
+/* this will make ALL <img> elements at most 100% of their PARENT! */
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  font-size: 29px;
+  color: black;
+}
+
+/* this class specifies shape */
+.column {
+  height: 100%;
+  width: 45%;
+  display: block;
+}
+
+.bigcolumn {
+  height: 100%;
+  width: 55%;
+  display: block;
+}
+
+.row {
+  height: calc(100% / 3);
+  width: 100%;
+  display: flex;
+}
+.smallcolumn {
+  height: 85%;
+  width: 100%;
+}
+.tinycolumn {
+  height: 15%;
+  width: 100%;
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.box {
+  height: 100%;
+  width: calc(100% / 3);
+  cursor: pointer;
+  filter: brightness(30%);
+}
+.box:hover {
+  filter: brightness(70%);
+}
+.box:active {
+  filter: brightness(100%);
+}
+.tinycolumn {
+  filter: brightness(70%);
+}
+.tinycolumn:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+
+/* these classes specify color */
+.green {
+  background-color: #00ff22;
+}
+.blue {
+  background-color: #2242f3;
+}
+.purple {
+  background-color: #b907ff;
+}
+.orange {
+  background-color: #fd5632;
+}
+.grey {
+  background-color: #d3d3d3;
+}
+.dark-grey {
+  background-color: #a9a9a9;
+}
+.red {
+  background-color: red;
+}
+.white {
+  background-color: white;
+}
+.black {
+  background-color: black;
+}
+
+@media only screen and (max-width: 1159px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+/* styles if the screen is 600px or less */
+@media only screen and (max-width: 700px) {
+  body {
+    display: block;
+  }
+
+  .column {
+    height: 45%;
+    width: 100%;
+  }
+
+  .bigcolumn {
+    height: 55%;
+    width: 100%;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
